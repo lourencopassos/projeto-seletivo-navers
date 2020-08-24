@@ -63,6 +63,7 @@ export const FormFooter = styled.div`
     border: none;
     height: 40px;
     margin-top: 32px;
+    cursor: pointer;
   }
 `;
 
@@ -80,4 +81,37 @@ export const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const ConfirmModal = styled.div`
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    left: 32px;
+    top: 32px;
+  }
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+  }
+
+  span {
+    font-size: 20px;
+    position: absolute;
+    top: 27px;
+    right: 27px;
+    cursor: pointer;
+    color: #212121;
+    font-weight: bold;
+  }
 `;

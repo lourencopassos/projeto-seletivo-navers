@@ -70,10 +70,11 @@ export const fetchDetail = async (id, token) => {
 export const updateNaver = async (id, token, body) => {
   const axiosConfig = {
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,      
     },
   };
   try {
+    console.log(body)
     await axios.put(`${baseUrl}/navers/${id}`, body, axiosConfig);
   } catch (error) {
     console.log(error);
